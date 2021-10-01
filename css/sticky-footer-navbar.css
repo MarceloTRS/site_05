@@ -28,14 +28,55 @@ html {
   }
   
   .footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
   }
   
   code {
-    font-size: 80%;
+      font-size: 80%;
   }
 
-  .logo {
-    width: 82px;
+  img.logo {
+      width: 82px;
+      float: left;
+  }
+  span.logo {
+      margin-top: 25px;
+      display: inline-block;   
+      font-size: 24px; 
+      margin-left: 10px;
+  }
+
+  .navbar-default {
+      background-color: white;
+      height: 100px;
+  }
+
+  .navbar-default .navbar-nav {
+      margin-top: 25px;
+      float: right;
+  }
+
+  /* Smartphone */
+  .navbar-header .navbar-toggle {
+    margin-top: 30px;
+  }
+  @media (max-width: 768px) {
+      .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {  
+        background-color: white;
+      }
+      .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border: none;
+      }
+}
+
+  /* Tablet */
+
+  @media (min-width: 768px) and (max-width: 992px) {
+        
+    .nav>li>a /*acessando a sequencia de atributos linhas e etc */ { 
+        padding: 7px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
   }
