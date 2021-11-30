@@ -45,6 +45,12 @@ html {
       font-family: "Raleway", sans-serif;
   }
 
+  h1 {
+      font-size: 48px;
+      text-align: center;
+      font-weight: bolder;
+  }
+
   h2 {
       font-size:22px;
       font-weight: bold;
@@ -149,6 +155,54 @@ html {
       font-size: 32px;
   }
 
+/* Página contato -Parte 1 */
+h1 {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+}
+.contato_destaque h3 {
+  color: rgb(84, 84, 84);
+  font-weight: bold;
+}
+.contato_destaque p {
+  font-size: 36px;
+}
+
+.contato_horario .contato_horario h3, .contato_horario p {
+  font-size: 24px;
+}
+
+.contato_horario h3 {
+font-weight: bold;
+color: black;
+}
+.contato_horario p {
+color: rgb(120, 120, 120);
+}
+  
+/* Página Contato - Parte 2*/
+.container_form_contato {
+    font-size: 24px;
+    margin-top: 150px;
+}
+
+.container_form_contato textarea {   
+  width: 100%;
+  height: 300px;
+  background-color: rgb(246, 246, 246);
+  padding: 20px;  /*separando as letras das bordas do text area*/
+  border: 1px solid rgb(220, 2020, 220);
+  color: rgb(180, 180, 180;
+
+}
+
+.container_form_contato input[type=submit] { /*botão enviar*/
+    color:white;
+    background-color: rgb(229,181,83);
+    border: none;
+    padding: 20px 35px;
+
   @media (max-width: 768px) {
       .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {  
         background-color: white;
@@ -156,6 +210,10 @@ html {
       .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         border: none;
       }
+
+      .contato_destaque p {
+        font-size: 18px;
+    }
 }
 
   /* Tablet */
@@ -172,7 +230,15 @@ html {
       margin-bottom: 600px;
     }
     .footer {
-          height: 600px !important;
+        height: 600px !important;
+    }
+    .contato_destaque p {
+        font-size: 18px !important;
     }
 
+
+    /* Contato */
+
   }
+  
+
